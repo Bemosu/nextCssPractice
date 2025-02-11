@@ -1,7 +1,11 @@
 "use client"
 import { useRouter } from "next/navigation";
 import Button from "../components/button";
-import Image from "next/image";
+import Image from 'next/image'
+
+
+
+
 
 export default function Home() {
   const rotuer = useRouter()
@@ -13,15 +17,9 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 ">
       <main className="flex flex-col gap-8 row-start-2 items-center justify-center sm:items-start h-full w-full">
         <div className="relative w-full h-[500px] border border-black px-[10%] ">
-        <Image       
-          src="/test7.jpg"
-          alt="Next.js logo"
-          width= {1920}
-          height= {500}
-          priority
-        />
-        </div>
 
+        </div>
+        <Image src="../assets/donut.svg" alt="donut" width={24} height={24}></Image>
         <div className="flex gap-4 items-center justify-center flex-col sm:flex-row w-full">
         <Button type="button" classes="bg-primary text-white transition-colors duration-500 ease-in-out hover:text-black hover:bg-[#fce6e6] hover:border-transparent" onClick={handleAbout}>go to </Button>
           <a
@@ -32,6 +30,7 @@ export default function Home() {
           >
             Read our docs
           </a>
+
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
