@@ -22,7 +22,6 @@ const Scrollbox = () => {
             { y: -100, ease: "bounce.out", duration: 1, rotate:90 },
             { y: -30, ease: "bounce.out", duration: 1, rotate:115 },
             { y: -30, ease: "bounce.out", duration: 1, rotate:130 },
-            { y: -30, ease: "bounce.out", duration: 1, rotate:150 },
             { y: -30, ease: "bounce.out", duration: 1, rotate:180 },
             { y: -30, ease: "bounce.out", duration: 1, rotate:210 },
             { y: -30, ease: "bounce.out", duration: 1, rotate:240 },
