@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import ImageCard from '@/components/ImageCard'
+import NameBox from '@/components/NameBox'
 
 
 const Intro2 = () => {
@@ -20,6 +21,7 @@ const Intro2 = () => {
  </div>
  <div>
  <ImageCard/>
+ <NameBox name="app"/>
  </div>
   </main>
   )
