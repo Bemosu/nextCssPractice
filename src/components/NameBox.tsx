@@ -6,7 +6,7 @@ interface NameBoxPRops {
 
 const NameBox: React.FC<NameBoxPRops> = ({name}) => {
   return (
-    <div className='w-5 h-3 rounded-md'>{name.toUpperCase()}</div>
+    <div className='w-[50px] flex items-center justify-center rounded-lg border border-gray-500 '>{name.toUpperCase()}</div>
   )
 }
 

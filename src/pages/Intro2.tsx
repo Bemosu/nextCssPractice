@@ -6,8 +6,8 @@ import NameBox from '@/components/NameBox'
 
 const Intro2 = () => {
   return (
-<main className="relative flex flex-col items-center justify-center min-h-10 px-5">
- <div className='absolute left-0 top-0 z-10 flex h-full w-full justify-between '>
+<main className="relative flex flex-col items-center justify-center min-h-10 ">
+ <div className='absolute left-0 top-0 z-10 flex h-full w-full justify-between p-[3%] '>
   <div className='h-full w-0 border-l-[1px] border-l-[#383738]'/>
   <div className='h-full w-0 border-l-[1px] border-l-[#383738]'/>
   <div className='h-full w-0 border-l-[1px] border-l-[#383738]'/>
