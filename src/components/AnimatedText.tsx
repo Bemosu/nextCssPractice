@@ -5,32 +5,46 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface AnimatedTextProps {
-  texts: string[]; 
+  texts: {id: string, text:string}[]; 
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({ texts }) => {
-  const textRef = useRef<(HTMLParagraphElement | null)[]>([]);
+  const textRefs = useRef<(HTMLParagraphElement | null)[]>([]);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.fromTo(
-      textRef.current,
-      { y:50, opacity:0},
-      { y: 0, opacity:1,
-        duration:1,
-        ease:"power3.out",
-        scrollTrigger: {
-          trigger : textRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none"
-        }
-      }
-    )
-  }, []);
+    const tl = gsap.timeline({
+      scrollTrigger : {
+        trigger : textRefs.current[0],
+        start : "top 100%",
+        toggleActions : "play none none none"
+      },
+    });
+
+    texts.forEach((_,index) => {
+      tl.fromTo(
+        textRefs.current[index],
+        {y:50, opacity:0},
+        {y:0, opacity:1, duration:1 , ease:"power3.out"},
+        index === 0 ? 0 : "+=0.5"
+      );
+    });
+  }, [texts]);
+
 
   return (
-    <div ref={textRef} className="text-4xl font-bold opacity-0">
-      {text} 
+    <div  className="text-center">
+      {texts.map((item, index)=>(
+        <p 
+          key={item.id}
+          ref={(el)=> {
+            if(el) textRefs.current[index] = el;
+          }}
+          className="text-4xl font-bold opacity-0"
+          >
+            {item.text}
+          </p>
+      ))}
     </div>
   );
 };

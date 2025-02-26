@@ -13,10 +13,12 @@
     "framer-motion": "^12.4.2",
     "gasp": "^0.0.2",
     "gsap": "^3.12.7",
+    "install": "^0.13.0",
     "motion": "^12.4.2",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
