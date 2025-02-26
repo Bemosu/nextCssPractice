@@ -9,7 +9,7 @@ export default function Home() {
 
 
   return (
-    <div>
+    <div >
 <SiteHeader/>
 <Intro1/>
 <Intro2/>

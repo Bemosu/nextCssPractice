@@ -18,11 +18,19 @@ const Intro2 = () => {
   <div className="w-full max-w-[600px] mt-24">
     <Image src="/gotoconsult.png" alt="gotoconsult" layout="responsive" width={16} height={9} />
   </div>
- </div>
- <div>
+  <div className='flex flex-row justify-center gap-[30%] z-20'>
+  <div className='z-20 mt-[80%]'>
  <ImageCard/>
  <NameBox name="app"/>
  </div>
+ <div className='z-20 mt-24'>
+ <ImageCard/>
+ <NameBox name="app"/>
+ </div>
+  </div>
+
+ </div>
+
   </main>
   )
 }
