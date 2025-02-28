@@ -6,7 +6,6 @@ import {v4 as uuidv4} from "uuid";
 import AnimatedText from "@/components/AnimatedText";
 
 
-
 export default function Intro1()  {
     const rotuer = useRouter()
 const handleAbout = () => {
