@@ -1,7 +1,7 @@
 "use client"
 import SiteHeader from "@/components/Header";
-import Intro1 from "@/pages/Intro1";
-import Intro2 from "@/pages/Intro2";
+import Intro1 from "@/pages/Intro1/Intro1";
+import Intro2 from "@/pages/Intro2/Intro2";
 
 
 export default function Home() {

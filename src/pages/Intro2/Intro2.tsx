@@ -1,11 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import ImageCard from '@/components/ImageCard'
-import NameBox from '@/components/NameBox'
-import AnimatedObj from '@/components/AnimatedObj'
 import IntroImage1 from './IntroImage1'
 import IntroImage2 from './IntroImage2'
 import IntroImage3 from './IntroImage3'
+import IntroAnimation from '@/components/IntroAnimation'
 
 
 const Intro2 = () => {
@@ -21,11 +19,20 @@ const Intro2 = () => {
  </div>
  <div className='flex flex-col justify-center items-center z-20 '>
   <div className="w-full max-w-[800px] mt-24">
-    <Image src="/gotoconsult.png" alt="gotoconsult" layout="responsive" width={16} height={9} />
+    <Image src="/assets/gotoconsult.png" alt="gotoconsult" layout="responsive" width={16} height={9} />
   </div>
+  <IntroAnimation direction="left">
     <IntroImage1/>
+  </IntroAnimation>
+  <IntroAnimation direction="right">
     <IntroImage2/>
+  </IntroAnimation>
+  <IntroAnimation direction="left">
     <IntroImage3/>
+  </IntroAnimation>
+
+
+
  </div>
 </main>
   )

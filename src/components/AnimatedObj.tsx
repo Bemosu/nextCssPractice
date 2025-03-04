@@ -4,9 +4,11 @@ import React, { useEffect, useRef } from 'react'
 
 interface OBJprops {
     OBJSrc:string;
+    firstY:number;
+    secondY:number;
 }
 
-const AnimatedObj: React.FC<OBJprops> = ({ OBJSrc }) => {
+const AnimatedObj: React.FC<OBJprops> = ({ OBJSrc,firstY = 50,secondY=0 }) => {
     const svgref = useRef(null)
 
     useEffect(() =>{
@@ -14,12 +16,12 @@ const AnimatedObj: React.FC<OBJprops> = ({ OBJSrc }) => {
         if(!svgref) return
         gsap.fromTo (
             svgref.current,
-            {y: 50,opacity : 0 },
-            {y:0, opacity:1, ease: "power3.out",duration:3},
+            {y: firstY ,opacity : 0 },
+            {y: secondY, opacity:1, ease: "power3.out",duration:3},
         )
     }, [])
   return (
-    <Image ref={svgref} src={OBJSrc} alt="SVGIMage" width={240} height={240}   ></Image>
+    <Image ref={svgref} src={OBJSrc} alt="SVGIMage" width={160} height={160}   ></Image>
   )
 }
 

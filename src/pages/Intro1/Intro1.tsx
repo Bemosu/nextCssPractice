@@ -1,7 +1,7 @@
 "use client"
 import { useRouter } from "next/navigation";
-import Button from "../components/button";
-import BackGround from '../../public/assets/background.png'
+import Button from "@/components/button";
+import BackGround from '../../../public/assets/background.png'
 import {v4 as uuidv4} from "uuid";
 import AnimatedText from "@/components/AnimatedText";
 
