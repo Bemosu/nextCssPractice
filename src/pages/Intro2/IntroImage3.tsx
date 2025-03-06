@@ -1,4 +1,3 @@
-import AnimatedObj from '@/components/AnimatedObj'
 import ImageCard from '@/components/ImageCard'
 import NameBox from '@/components/NameBox'
 import gsap from 'gsap'
@@ -53,8 +52,7 @@ const IntroImage3 = () => {
       </div>
     </div>
     <div ref={rightRef} className='z-20 mt-[30%]'>
-      <ImageCard src="/assets/svgBackGround.jpg" alt="backgrounImage">
-        <AnimatedObj firstY={50} secondY={0} OBJSrc='/assets/letterEnvelope.svg'></AnimatedObj>
+      <ImageCard src="/assets/Ipad.webp" alt="IpadImage">
       </ImageCard>
       <div className="relative z-30 mt-4">
         <NameBox name="app" />

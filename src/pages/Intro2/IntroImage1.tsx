@@ -30,7 +30,6 @@ const IntroImage1 = () => {
           },
           onComplete: () =>{
             setAnimationChildren(true)
-            console.log('콘슬 오나료', animationChildren )
           }
         },
       );

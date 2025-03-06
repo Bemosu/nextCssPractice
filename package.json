@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
-    "framer-motion": "^12.4.2",
+    "framer-motion": "^12.4.10",
     "gasp": "^0.0.2",
     "gsap": "^3.12.7",
     "install": "^0.13.0",
-    "motion": "^12.4.2",
+    "motion": "^12.4.10",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
